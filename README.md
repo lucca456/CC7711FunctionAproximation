@@ -22,7 +22,7 @@
 **Desvio Padrão** = **0.4387**
 
 ### Teste 5
-**não conseguimos realizar o quintos**
+**não conseguimos realizar o quinto teste**
 ![codeteste5.png](https://github.com/lucca456/CC7711FunctionAproximation/blob/main/imgs/codeteste5.png?raw=true)
 
 
