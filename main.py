@@ -1,9 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
+from sklearn.preprocessing import MaxAbsScaler
 
 print('Carregando Arquivo de teste')
-arquivo = np.load('teste4.npy')
+arquivo = np.load('teste5.npy')
+scale = MaxAbsScaler().fit(arquivo[1])
 x = arquivo[0]
 y = np.ravel(arquivo[1])
 
@@ -12,7 +14,7 @@ y = np.ravel(arquivo[1])
 
 
 regr = MLPRegressor(hidden_layer_sizes=(20,40),
-                    max_iter=50000,
+                    max_iter=30000,
                     activation='relu', #{'identity', 'logistic', 'tanh', 'relu'},
                     solver='adam',
                     learning_rate = 'adaptive',
