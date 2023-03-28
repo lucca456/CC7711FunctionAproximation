@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPRegressor
 
 print('Carregando Arquivo de teste')
-arquivo = np.load('teste3.npy')
+arquivo = np.load('teste4.npy')
 x = arquivo[0]
 y = np.ravel(arquivo[1])
 
@@ -11,8 +11,8 @@ y = np.ravel(arquivo[1])
 
 
 
-regr = MLPRegressor(hidden_layer_sizes=(2,15),
-                    max_iter=7000,
+regr = MLPRegressor(hidden_layer_sizes=(20,40),
+                    max_iter=50000,
                     activation='relu', #{'identity', 'logistic', 'tanh', 'relu'},
                     solver='adam',
                     learning_rate = 'adaptive',
